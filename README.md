@@ -9,9 +9,21 @@ The code can be compiled using
 - **Visual Studio** Express Edition from Microsoft
 - **GCC** (through MinGW Tool Chain)
 
+--------------------------------------------------------------------------------------------------------------------------------------
+##Compilation
+
 Compilation of the code can be done in GCC (MinGW) using the Following command.
-<table>
-<tr>
-hello
-</tr>
-</table>
+
+```
+C:\ gcc -o SourceFile.exe  SourceFile.c -Wl,--subsystem,windows  -lgdi32
+```
+
+- The **-Wl,--subsystem,windows** linker switch ensures that the application is built as a Windows GUI application, and not a console application. Failing to do so would result in a console window being displayed whilst your application runs
+
+- You should link with the gdi32 library using "**-lgdi32** " otherwise the code will complain about "*undefined reference to GetStockObject*".
+
+--------------------------------------------------------------------------------------------------------------------------------------
+## Contents
+
+
+
