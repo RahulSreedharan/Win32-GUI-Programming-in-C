@@ -1,1 +1,3 @@
-# Win32-GUI-Programming-in-Cwqw
+#Building Graphical User Interface using Win32 API and C language 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
