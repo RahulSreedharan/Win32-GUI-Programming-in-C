@@ -12,13 +12,13 @@
 //| Date	      :	29-July-2016                                                          | //
 //+=======================================================================================+ //
 
-//+=======================================================================================+ //
-//| Compilation  : gcc -o Simple_Window  Simple_Window.c -Wl,--subsystem,windows          | //
-//+---------------------------------------------------------------------------------------+ //
-//| The -Wl,--subsystem,windows linker switch ensures that the application is built as a  | //
-//| Windows GUI application, and not a console application. Failing to do so would result | //
-//| in a console window being displayed whilst your application runs,                     | //
-//+=======================================================================================+ //
+//+=========================================================================================+ //
+//| Compilation  : gcc -o Simple_Window  Simple_Window.c -lcomctl32 -Wl,--subsystem,windows | //
+//+-----------------------------------------------------------------------------------------+ //
+//| The -Wl,--subsystem,windows linker switch ensures that the application is built as a    | //
+//| Windows GUI application, and not a console application. Failing to do so would result   | //
+//| in a console window being displayed whilst your application runs,                       | //
+//+=========================================================================================+ //
 
 
 //+=======================================================================================+ //
